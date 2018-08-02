@@ -97,8 +97,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-DEFAULT_USER=rxl6c47@C02VN42DHTD6MBP
-
 # Power level 9k setting
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(time dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status rbenv)

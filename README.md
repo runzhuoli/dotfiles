@@ -6,7 +6,7 @@ website: https://brew.sh/
 
 install brew:
 
-    brew cask install iterm2
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 ## iTerm2
 
@@ -20,7 +20,11 @@ Get the iTerm color settings
 
 ## Oh My Zsh
 
+install oh-my-zsh through brew:
+
     sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+rename zshrc to .zshrc and place it into "~/"
 
 ### Powerlevel9k
 
@@ -34,8 +38,40 @@ Powerlevel9k offers a whole lot more, best is to [check out these user made conf
 
 ## Tmux
 
+install tmux through brew:
+
     brew install tmux
+
+rename tumx.conf to .tmux.conf and place it into "~/"
 
 ## Tig
 
+install tig through brew:
+
     brew install tig
+
+rename tigrc to .tigrc and place it into "~/" 
+
+## Neovim
+
+install neovim through brew:
+
+    brew install neovim
+
+copy files under nvim to "~/.config/nvim" 
+
+install vim-plug:
+
+    curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+open nvim and run:
+
+    :PlugInstall
+
+active YouCompleteMe plugin:
+
+    brew install python && brew install CMake
+
+    pip3 install neovim
+
+    ~/.config/nvim/plugged/YouCompleteMe/install.py --racer-completer --tern-completer
